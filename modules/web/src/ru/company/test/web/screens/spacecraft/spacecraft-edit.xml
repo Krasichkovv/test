@@ -32,6 +32,7 @@
                         <textField id="diameterField" property="diameter"/>
                         <textField id="nameFieldRB"  property="name"/>
                         <textField id="length" property="lenght"/>
+                        <textField id="name" property="name"/>
                     </column>
                 </form>
             </tab>
