@@ -31,7 +31,7 @@
                         <textField id="nameFieldRN" property="name"/>
                         <textField id="diameterField" property="diameter"/>
                         <textField id="nameFieldRB"  property="name"/>
-                        <textField id="length" property="lenght"/>
+                        <textField id="length" property="nolenght"/>
                         <textField id="name" property="name"/>
                     </column>
                 </form>

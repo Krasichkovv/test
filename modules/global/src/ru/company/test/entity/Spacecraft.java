@@ -21,7 +21,7 @@ public class Spacecraft extends StandardEntity {
     private String booster;
 
     @Column(name = "LENGHT")
-    private Integer lenght;
+    private Integer nolenght;
 
     @Column(name = "DIAMETR")
     private Integer diameter;
@@ -33,12 +33,12 @@ public class Spacecraft extends StandardEntity {
     @JoinColumn(name = "TYPE_ID")
     private SpacecraftType type;
 
-    public void setLenght(Integer lenght) {
-        this.lenght = lenght;
+    public void setNolenght(Integer nolenght) {
+        this.nolenght = nolenght;
     }
 
-    public Integer getLenght() {
-        return lenght;
+    public Integer getNolenght() {
+        return nolenght;
     }
 
     public void setDiameter(Integer diameter) {

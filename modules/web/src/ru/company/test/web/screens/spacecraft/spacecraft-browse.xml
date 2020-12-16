@@ -36,7 +36,7 @@
                 <column id="type"/>
                 <column id="rocket"/>
                 <column id="booster"/>
-                <column id="lenght"/>
+                <column id="nolenght"/>
                 <column id="diameter"/>
             </columns>
             <rowsCount/>
