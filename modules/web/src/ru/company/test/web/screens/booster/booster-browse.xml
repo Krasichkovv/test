@@ -15,7 +15,7 @@
             </loader>
         </collection>
     </data>
-    <dialogMode height="600"
+    <dialogMode height="400"
                 width="800"/>
     <layout expand="boostersTable"
             spacing="true">
