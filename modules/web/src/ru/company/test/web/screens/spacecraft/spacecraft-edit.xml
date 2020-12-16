@@ -18,8 +18,8 @@
             </loader>
         </collection>
     </data>
-    <dialogMode height="600"
-                width="800"/>
+    <dialogMode height="900"
+                width="888"/>
     <layout expand="editActions" spacing="true">
         <tabSheet id="tabSheet">
             <tab id="tab" caption="основная инфа">

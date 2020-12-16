@@ -10,8 +10,8 @@
             <loader/>
         </instance>
     </data>
-    <dialogMode height="600"
-                width="800"/>
+    <dialogMode height="200"
+                width="400"/>
     <layout expand="editActions" spacing="true">
         <form id="form" dataContainer="boosterDc">
             <column width="350px">
