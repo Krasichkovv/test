@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        caption="msg://spacecraftEdit.caption"
+        focusComponent="form"
+        messagesPack="ru.company.test.web.screens.spacecraft">
+    <data>
+        <instance id="spacecraftDc"
+                  class="ru.company.test.entity.Spacecraft"
+                  view="spacecraft-view">
+            <loader/>
+        </instance>
+        <collection id="spacecraftTypesDc" class="ru.company.test.entity.SpacecraftType">
+            <view extends="_local"/>
+            <loader id="spacecraftTypesDl">
+                <query>
+                    <![CDATA[select e from test_SpacecraftType e]]>
+                </query>
+            </loader>
+        </collection>
+    </data>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="editActions" spacing="true">
+        <tabSheet id="tabSheet">
+            <tab id="tab" caption="основная инфа">
+                <form id="form" dataContainer="spacecraftDc">
+                    <column width="350px">
+                        <lookupField id="lookupField" property="type" optionsContainer="spacecraftTypesDc"/>
+                        <textField id="nameFieldKA" property="name"/>
+                        <textField id="weight" property="weight"/>
+                        <textField id="nameFieldRN" property="name"/>
+                        <textField id="diameterField" property="diameter"/>
+                        <textField id="nameFieldRB"  property="name"/>
+                        <textField id="length" property="lenght"/>
+                    </column>
+                </form>
+            </tab>
+            <tab id="tabKA" caption="Информация о типе КА">
+                <fragment screen="test_Fragmentka"/>
+            </tab>
+            <tab id="tabRN" caption="Информация о типе РН">
+                <fragment screen="test_Fragmentrn"/>
+            </tab>
+            <tab id="tabRB" caption="Информация о типе РБ">
+                <fragment screen="test_Fragmentrb"/>
+            </tab>
+        </tabSheet>
+        <hbox id="editActions" spacing="true">
+            <button action="windowCommitAndClose"/>
+            <button action="windowClose"/>
+        </hbox>
+    </layout>
+</window>

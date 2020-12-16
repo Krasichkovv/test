@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        caption="msg://boosterEdit.caption"
+        focusComponent="form"
+        messagesPack="ru.company.test.web.screens.booster">
+    <data>
+        <instance id="boosterDc"
+                  class="ru.company.test.entity.Booster">
+            <view extends="_local"/>
+            <loader/>
+        </instance>
+    </data>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="editActions" spacing="true">
+        <form id="form" dataContainer="boosterDc">
+            <column width="350px">
+                <textField id="nameField" property="name"/>
+                <textField id="lenghtField" property="lenght"/>
+            </column>
+        </form>
+        <hbox id="editActions" spacing="true">
+            <button action="windowCommitAndClose"/>
+            <button action="windowClose"/>
+        </hbox>
+    </layout>
+</window>

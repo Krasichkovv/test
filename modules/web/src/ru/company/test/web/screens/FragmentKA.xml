@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fragment xmlns="http://schemas.haulmont.com/cuba/screen/fragment.xsd">
+    <data>
+        <instance id="spacecraftDc"
+                  class="ru.company.test.entity.Spacecraft"
+                  view="spacecraft-view">
+            <loader/>
+        </instance>
+    </data>
+    <layout>
+        <form id="form1" dataContainer="spacecraftDc" caption="Информация о типе КА">
+            <column width="200px">
+                <textField id="nameField" property="name"/>
+                <textField id="weight" property="weight"/>
+            </column>
+        </form>
+
+    </layout>
+</fragment>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fragment xmlns="http://schemas.haulmont.com/cuba/screen/fragment.xsd">
+    <data>
+        <instance id="boosterDc" class="ru.company.test.entity.Booster">
+            <view extends="_local"/>
+            <loader id="boosterDl"/>
+        </instance>
+    </data>
+    <layout>
+        <form id="form1" dataContainer="boosterDc" width="AUTO" caption="Информация о типе РБ">
+            <column>
+                <textField id="nameField" property="name"/>
+                <textField id="length" property="lenght"/>
+            </column>
+        </form>
+    </layout>
+</fragment>

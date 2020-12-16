@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <persistence-unit name="test" transaction-type="RESOURCE_LOCAL">
+
+        <class>ru.company.test.entity.Spacecraft</class>
+        <class>ru.company.test.entity.Booster</class>
+        <class>ru.company.test.entity.Rocket</class>
+        <class>ru.company.test.entity.SpacecraftType</class>
+    </persistence-unit>
+</persistence>

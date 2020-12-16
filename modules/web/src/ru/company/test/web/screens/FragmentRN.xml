@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fragment xmlns="http://schemas.haulmont.com/cuba/screen/fragment.xsd">
+    <data>
+        <instance id="rocketDc" class="ru.company.test.entity.Rocket">
+            <view extends="_local"/>
+            <loader id="rocketDl"/>
+        </instance>
+    </data>
+    <layout>
+        <form id="form1" dataContainer="rocketDc" caption="Информация о типе РН" width="AUTO">
+            <textField id="nameField" property="name"/>
+            <textField id="diameterField" property="diameter"/>
+        </form>
+    </layout>
+</fragment>
